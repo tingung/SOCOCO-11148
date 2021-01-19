@@ -1,0 +1,23 @@
+
+<!-- saved from url=(0061)http://ec2-18-156-176-125.eu-central-1.compute.amazonaws.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Sococo Test</title>
+</head>
+
+<body>
+  <h1>This is a Sococo Test Site</h1>
+  <h3 id="result"><span style="color: green;">Your site was safe.</span></h3>
+  <script>
+    const elem = document.getElementById('result');
+    if (window.opener) {
+      window.opener.location = "https://www.google.com";
+      elem.innerHTML = '<span style="color: red;">Your site was vulnerable.</span>';
+    } else {
+      elem.innerHTML = '<span style="color: green;">Your site was safe.</span>';
+    }
+  </script>
+
+
+
+</body></html>
