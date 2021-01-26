@@ -1,0 +1,9 @@
+<script>
+function sendRedirect() {
+document.getElementById("redirectURL");
+window.location.href=document.getElementById("redirectURL").value;
+}
+</script>
+
+Redirect URL: <input type="text" id="redirectURL"></br>
+<input type="button" onclick="sendRedirect()" value="Submit">
